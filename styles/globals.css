@@ -1,9 +1,30 @@
+@font-face {
+  font-family: 'Argesta Display';
+  src: url('/fonts/ArgestaDisplay-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BNNord';
+  src: url('/fonts/BNNord.otf') format('opentype');
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Argesta Display', -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, serif;
+}
+
+h1 {
+  font-family: 'BNNord';
 }
 
 a {
