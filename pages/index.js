@@ -1,15 +1,17 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import HomeImage from '../components/HomeImage';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Roksana Machowska</title>
       </Head>
 
-      <h1>Roksana Machowska</h1>
-    </div>
+      <Header />
+      <HomeImage />
+    </Layout>
   );
 }
