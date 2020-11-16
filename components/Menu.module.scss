@@ -25,15 +25,20 @@
     div {
       display: none;
     }
+
     .text {
       // display: none;
       text-align: justify;
       margin: 0 16px 16px 0;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 16px;
+      line-height: 24px;
 
       &.active {
         display: block;
+      }
+
+      span {
+        font-family: 'BNNord';
       }
     }
 
