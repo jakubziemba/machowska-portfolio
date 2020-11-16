@@ -21,6 +21,7 @@ body {
   font-family: 'Argesta Display', -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, serif;
+  user-select: none;
 }
 
 h1 {
