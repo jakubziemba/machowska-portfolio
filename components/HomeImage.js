@@ -6,10 +6,10 @@ export default function HomeImage() {
     <div className={styles.imageContainer}>
       <Image
         src='/images/me.jpg'
-        width={320}
-        height={480}
+        quality={100}
+        width={1333}
+        height={2000}
         layout='responsive'
-        priority
       />
     </div>
   );
