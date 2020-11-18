@@ -16,8 +16,8 @@ export default function Footer() {
         />
       </a>
       <p className={styles.copy}>
-        <span dangerouslySetInnerHTML={{ __html: '&copy;' }} />{' '}
-        Roksana Machowska 2020: All rights reserved.
+        <span>&copy;</span> Roksana Machowska 2020: All rights
+        reserved.
       </p>
     </div>
   );
