@@ -1,0 +1,35 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      margin-top: 1.5rem;
+    }
+
+    .materials {
+      margin-top: 0.5rem;
+    }
+
+    .size {
+      margin-top: 0.2rem;
+      margin-bottom: 24px;
+    }
+
+    .imageWrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
