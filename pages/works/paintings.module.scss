@@ -1,7 +1,4 @@
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +23,8 @@
   }
 
   .header {
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,24 +34,6 @@
   svg {
     align-self: flex-start;
     font-size: 1.25rem;
-    margin-top: 16px;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .title {
-      margin-top: 1rem;
-    }
-
-    .materials {
-      margin-top: 0.5rem;
-    }
-
-    .size {
-      margin-top: 0.2rem;
-    }
+    margin: 16px 16px auto 16px;
   }
 }
