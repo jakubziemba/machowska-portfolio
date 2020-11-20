@@ -21,14 +21,6 @@ export default function Work() {
                 />
               </div>
             ))}
-            {/* <div className={styles.imageWrapper}>
-                <Image
-                  src='/images/paintings/shape-1-2020/2.png'
-                  alt='Picture of the "Shape 1" painting'
-                  width={593}
-                  height={892}
-                />
-              </div> */}
           </div>
         );
       })}
