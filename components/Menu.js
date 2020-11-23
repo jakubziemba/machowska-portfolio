@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import About from './MenuItems/About';
 import Works from './MenuItems/Works';
-import Exhibitions from './MenuItems/Exhibitions';
-import Contact from './MenuItems/Contact';
 import styles from './Menu.module.scss';
 
 export default function Menu() {
@@ -12,11 +9,9 @@ export default function Menu() {
   return (
     <div className={styles.menu}>
       <ul>
-        <Link href='/about'>
-          <li>
-            <a>About</a>
-          </li>
-        </Link>
+        <li>
+          <Link href='/about'>About</Link>
+        </li>
         <li
           className={worksActive ? styles.active : undefined}
           onClick={() => setWorksActive(!worksActive)}
@@ -24,12 +19,12 @@ export default function Menu() {
           Works
         </li>
         {worksActive && <Works />}
-        <Link href='/exhibitions'>
-          <li>Exhibitions</li>
-        </Link>
-        <Link href='/contact'>
-          <li>Contact</li>
-        </Link>
+        <li>
+          <Link href='/exhibitions'>Exhibitions</Link>
+        </li>
+        <li>
+          <Link href='/contact'>Contact</Link>
+        </li>
       </ul>
     </div>
   );
