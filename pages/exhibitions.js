@@ -8,9 +8,9 @@ export default function Exhibitions() {
     <Layout>
       <Header title='Exhibitions' />
       <HomeImage />
-      <div className={styles.container}>
+      <div>
         <h3>Prizes</h3>
-        <p className={styles.text}>
+        <p>
           2020
           <br />
           Scholarships for the artistic achievements, from the

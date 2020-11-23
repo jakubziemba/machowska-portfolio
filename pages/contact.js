@@ -8,7 +8,7 @@ export default function Contact() {
     <Layout>
       <Header title='Contact' />
       <HomeImage />
-      <div className={styles.container}>
+      <div>
         <h3>Email:</h3> <h4>roksana1159@gmail.com</h4>
         <h3>Instagram: </h3> <h4>@roksana_machowska</h4>
       </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './work.module.scss';
-import { paintings } from './resources';
+import { paintings } from '../../lib/resources';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function Work() {

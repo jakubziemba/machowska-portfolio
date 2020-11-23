@@ -6,10 +6,10 @@ import Footer from '../components/Footer';
 export default function About() {
   return (
     <Layout>
-      <div className={styles.container}>
+      <div>
         <Header title='About' />
         <HomeImage />
-        <p className={styles.text}>
+        <p>
           <span>Roksana Machowska</span>, was born in 1996 in Warsaw.
           She holds a Master of Fine Arts. She obtained eight
           scholarships for the best students for the artistic
