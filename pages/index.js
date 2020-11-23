@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import Header from '../components/Header';
+import HomeHeader from '../components/HomeHeader';
 import HomeImage from '../components/HomeImage';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
@@ -12,7 +12,7 @@ export default function Home() {
         <title>Roksana Machowska</title>
       </Head>
 
-      <Header />
+      <HomeHeader />
       <HomeImage />
       <Menu />
       <Footer />
