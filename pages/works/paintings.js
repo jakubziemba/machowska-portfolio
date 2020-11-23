@@ -1,22 +1,12 @@
-import { useRouter } from 'next/router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import Layout from '../../components/Layout';
+import Header from '../../components/Header';
 import Work from './work';
-import styles from './paintings.module.scss';
 
 export default function Paintings() {
-  const router = useRouter();
-
   return (
-    <div className={styles.container}>
-      <FontAwesomeIcon
-        icon={faArrowLeft}
-        onClick={() => router.back()}
-      />
-      <div className={styles.header}>
-        <h1>Paintings</h1>
-      </div>
+    <Layout>
+      <Header title='Paintings' />
       <Work />
-    </div>
+    </Layout>
   );
 }
