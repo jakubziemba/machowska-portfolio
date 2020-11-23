@@ -2,7 +2,6 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import HomeImage from '../components/HomeImage';
 import Footer from '../components/Footer';
-import styles from './Text.module.scss';
 
 export default function About() {
   return (
