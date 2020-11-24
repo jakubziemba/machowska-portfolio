@@ -10,6 +10,7 @@ export default function HomeImage() {
         width={668}
         height={1000}
         loading='eager'
+        layout='intrinsic'
         alt='Photo of Roksana Machowska'
       />
     </div>
