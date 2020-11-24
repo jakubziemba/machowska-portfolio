@@ -19,4 +19,20 @@
       }
     }
   }
+
+  @media screen and (min-width: 668px) {
+    order: -1;
+    align-self: flex-end;
+    padding-bottom: 160px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        font-size: 32px;
+        line-height: 1.4;
+      }
+    }
+  }
 }
