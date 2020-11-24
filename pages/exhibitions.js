@@ -1,14 +1,25 @@
 import Header from '../components/Header';
-import HomeImage from '../components/HomeImage';
+import Image from 'next/image';
 import Footer from '../components/Footer';
+import styles from './image.module.scss';
 
 export default function Exhibitions() {
   return (
     <>
       <Header title='Exhibitions' />
-      <HomeImage />
+      <div className={styles.imageContainer}>
+        <Image
+          src='/images/sketch2.png'
+          quality={100}
+          width={668}
+          height={1000}
+          loading='eager'
+          layout='responsive'
+          alt='A picture of Sketches'
+        />
+      </div>
       <div>
-        <h3>Prizes</h3>
+        <h2>Prizes</h2>
         <p>
           2020
           <br />

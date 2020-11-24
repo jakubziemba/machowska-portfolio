@@ -1,15 +1,35 @@
 import Header from '../components/Header';
-import HomeImage from '../components/HomeImage';
+import Image from 'next/image';
 import Footer from '../components/Footer';
+import styles from './contact.module.scss';
 
 export default function Contact() {
   return (
     <>
       <Header title='Contact' />
-      <HomeImage />
-      <div>
-        <h3>Email:</h3> <h4>roksana1159@gmail.com</h4>
-        <h3>Instagram: </h3> <h4>@roksana_machowska</h4>
+      <div className={styles.imageContainer}>
+        <Image
+          src='/images/sketch1.png'
+          quality={100}
+          width={668}
+          height={1000}
+          loading='eager'
+          layout='responsive'
+          alt='A picture of Sketches'
+        />
+      </div>
+      <div className={styles.contact}>
+        <h2>Email:</h2>{' '}
+        <a href='mailto:roksana1159@gmail.com'>
+          <h3 className={styles.link}>roksana1159@gmail.com</h3>
+        </a>
+        <h2>Instagram: </h2>{' '}
+        <a
+          href='https://instagram.com/roksana_machowska'
+          target='_blank'
+        >
+          <h3 className={styles.link}>@roksana_machowska</h3>
+        </a>
       </div>
       <Footer />
     </>
