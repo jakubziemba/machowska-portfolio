@@ -5,11 +5,12 @@ export default function HomeImage() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src='/me.jpg'
+        src='/me.png'
         quality={100}
         width={668}
         height={1000}
         layout='responsive'
+        loading='eager'
         alt='Photo of Roksana Machowska'
       />
     </div>
