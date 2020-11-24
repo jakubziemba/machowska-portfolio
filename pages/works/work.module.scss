@@ -18,15 +18,22 @@
     }
 
     .title {
-      margin-top: 1.5rem;
+      display: flex;
+      flex-flow: row wrap;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-top: 2rem;
+      margin-left: 0;
+      text-align: center;
     }
 
     .materials {
-      margin-top: 0.5rem;
+      margin-top: 0;
+      margin-bottom: 8px;
     }
 
     .size {
-      margin-top: 0.2rem;
+      margin-top: 0;
       margin-bottom: 24px;
     }
 
@@ -37,6 +44,16 @@
 
       &:last-of-type {
         margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .content {
+    .container {
+      .title {
+        text-align: center;
       }
     }
   }
