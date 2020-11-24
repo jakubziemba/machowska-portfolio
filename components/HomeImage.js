@@ -7,8 +7,8 @@ export default function HomeImage() {
       <Image
         src='/images/me.jpg'
         quality={100}
-        width={1333}
-        height={2000}
+        width={668}
+        height={1000}
         layout='responsive'
       />
     </div>
