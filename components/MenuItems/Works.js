@@ -7,8 +7,12 @@ export default function Works() {
       <li>
         <Link href='/works/paintings'>Paintings</Link>
       </li>
-      <li>Graphic Art</li>
-      <li>Posters</li>
+      <li>
+        <Link href='/works/graphic-art'>Graphic Art</Link>
+      </li>
+      <li>
+        <Link href='/works/posters'>Posters</Link>
+      </li>
     </div>
   );
 }
