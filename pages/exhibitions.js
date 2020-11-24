@@ -1,11 +1,10 @@
-import Layout from '../components/Layout';
 import Header from '../components/Header';
 import HomeImage from '../components/HomeImage';
 import Footer from '../components/Footer';
 
 export default function Exhibitions() {
   return (
-    <Layout>
+    <>
       <Header title='Exhibitions' />
       <HomeImage />
       <div>
@@ -84,6 +83,6 @@ export default function Exhibitions() {
         </p>
       </div>
       <Footer />
-    </Layout>
+    </>
   );
 }

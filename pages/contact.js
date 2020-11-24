@@ -1,11 +1,10 @@
-import Layout from '../components/Layout';
 import Header from '../components/Header';
 import HomeImage from '../components/HomeImage';
 import Footer from '../components/Footer';
 
 export default function Contact() {
   return (
-    <Layout>
+    <>
       <Header title='Contact' />
       <HomeImage />
       <div>
@@ -13,6 +12,6 @@ export default function Contact() {
         <h3>Instagram: </h3> <h4>@roksana_machowska</h4>
       </div>
       <Footer />
-    </Layout>
+    </>
   );
 }
