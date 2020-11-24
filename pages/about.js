@@ -15,8 +15,8 @@ export default function About() {
             quality={100}
             width={668}
             height={1000}
-            loading='eager'
             layout='responsive'
+            priority={true}
             alt='Photo of Roksana Machowska'
           />
         </div>

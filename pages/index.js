@@ -20,8 +20,8 @@ export default function Home() {
             quality={100}
             width={668}
             height={1000}
-            loading='eager'
             layout='responsive'
+            priority={true}
             alt='Photo of Roksana Machowska'
           />
         </div>

@@ -13,8 +13,8 @@ export default function Contact() {
           quality={100}
           width={668}
           height={1000}
-          loading='eager'
           layout='responsive'
+          priority={true}
           alt='A picture of Sketches'
         />
       </div>
