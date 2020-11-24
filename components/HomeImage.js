@@ -9,7 +9,6 @@ export default function HomeImage() {
         quality={100}
         width={668}
         height={1000}
-        layout='responsive'
         loading='eager'
         alt='Photo of Roksana Machowska'
       />
