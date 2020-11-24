@@ -13,7 +13,6 @@
   h1 {
     text-transform: uppercase;
     font-size: 42px;
-    margin-top: 8px;
   }
 
   h2,
@@ -29,13 +28,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 
   svg {
     align-self: flex-start;
     font-size: 1.25rem;
-    margin: 16px 16px 8px 16px;
+    margin: 16px 16px 4px 16px;
     cursor: pointer;
   }
 }
