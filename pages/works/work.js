@@ -37,8 +37,8 @@ export default function Work({ category }) {
                 alt={`Picture of the "${work.title}" painting`}
                 width={668}
                 height={1000}
-                loading='lazy'
                 quality={100}
+                priority={true}
               />
             </div>
           ))}
