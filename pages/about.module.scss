@@ -1,0 +1,23 @@
+.main {
+  .menu {
+    display: none;
+  }
+
+  .image {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  .main {
+    display: flex;
+
+    .menu {
+      display: flex;
+    }
+
+    .image {
+      display: none;
+    }
+  }
+}
