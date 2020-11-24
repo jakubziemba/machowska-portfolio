@@ -1,23 +1,44 @@
 import Image from 'next/image';
 import styles from './work.module.scss';
-import { paintings } from '../../lib/resources';
+import { paintings, graphicArt, posters } from '../../lib/resources';
 import { v4 as uuidv4 } from 'uuid';
 
-export default function Work() {
+export default function Work({ category }) {
+  // check category = which object from resources.js should be rendered
+  function chooseWork() {
+    switch (category) {
+      case 'paintings':
+        return paintings;
+        break;
+      case 'graphicArt':
+        return graphicArt;
+        break;
+      case 'posters':
+        return posters;
+        break;
+      default:
+        return paintings;
+    }
+  }
+
+  const work = chooseWork();
+
   return (
     <div className={styles.content}>
-      {paintings.map((painting) => (
-        <div className={styles.container} key={painting.id}>
-          <h2 className={styles.title}>{painting.title}</h2>
-          <p className={styles.materials}>{painting.materials}</p>
-          <p className={styles.size}>{painting.size}</p>
-          {painting.path.map((path) => (
+      {work.map((work) => (
+        <div className={styles.container} key={work.id}>
+          <h2 className={styles.title}>{work.title}</h2>
+          <p className={styles.materials}>{work.materials}</p>
+          <p className={styles.size}>{work.size}</p>
+          {work.path.map((path) => (
             <div className={styles.imageWrapper} key={uuidv4()}>
               <Image
                 src={path}
-                alt='Picture of the "Shape 1" painting'
-                width={593}
-                height={892}
+                alt={`Picture of the "${work.title}" painting`}
+                width={668}
+                height={1000}
+                loading='lazy'
+                quality={100}
               />
             </div>
           ))}
