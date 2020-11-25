@@ -9,13 +9,10 @@ export default function Work({ category }) {
     switch (category) {
       case 'paintings':
         return paintings;
-        break;
       case 'graphicArt':
         return graphicArt;
-        break;
       case 'posters':
         return posters;
-        break;
       default:
         return paintings;
     }
