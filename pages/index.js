@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import HomeHeader from '../components/HomeHeader';
 import Menu from '../components/Menu';
@@ -7,11 +6,7 @@ import styles from './image.module.scss';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Roksana Machowska</title>
-      </Head>
-
+    <>
       <HomeHeader />
       <div className={styles.main}>
         <div className={styles.imageContainer}>
@@ -28,6 +23,6 @@ export default function Home() {
         <Menu />
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
