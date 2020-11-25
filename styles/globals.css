@@ -26,6 +26,8 @@ body {
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, serif;
   user-select: none;
+  background-color: #fefefe;
+  color: #272623;
 }
 
 a {
