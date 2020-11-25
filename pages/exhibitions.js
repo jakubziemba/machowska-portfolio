@@ -6,17 +6,23 @@ import {
   soloExhibition,
   groupExhibition,
 } from '../lib/resources';
-import styles from './image.module.scss';
+import styles from './exhibitions.module.scss';
 
 function Prizes() {
   return (
-    <div>
-      <h2>Prizes</h2>
+    <div className={styles.container}>
+      <h2 className={styles.heading}>Prizes</h2>
       {prizes.map((prize, index) => (
-        <div key={index}>
+        <div className={styles.wrapper} key={index}>
           <h3>{prize.year}</h3>
-          <p>{prize.body}</p>
-          <p>{prize.location}</p>
+          {prize.entries.map((entry, index) => (
+            <div className={styles.entry} key={index}>
+              <ul>
+                <li>{entry.body}</li>
+                <p>{entry.location}</p>
+              </ul>
+            </div>
+          ))}
         </div>
       ))}
     </div>
@@ -25,13 +31,21 @@ function Prizes() {
 
 function SoloExhibition() {
   return (
-    <div>
-      <h2>Solo Exhibition</h2>
+    <div className={styles.container}>
+      <h2 className={styles.heading}>Solo Exhibition</h2>
       {soloExhibition.map((ex, index) => (
-        <div key={index}>
+        <div className={styles.wrapper} key={index}>
           <h3>{ex.year}</h3>
-          <p>{ex.body}</p>
-          <p>{ex.location}</p>
+          {ex.entries.map((entry, index) => (
+            <div className={styles.entry} key={index}>
+              <ul>
+                <li>{entry.body}</li>
+                <p>{entry.location}</p>
+              </ul>
+              {/* <p>{entry.body}</p>
+              <p>{entry.location}</p> */}
+            </div>
+          ))}
         </div>
       ))}
     </div>
@@ -40,13 +54,19 @@ function SoloExhibition() {
 
 function GroupExhibition() {
   return (
-    <div>
-      <h2>Group Exhibition</h2>
+    <div className={styles.container}>
+      <h2 className={styles.heading}>Group Exhibition</h2>
       {groupExhibition.map((grEx, index) => (
-        <div key={index}>
+        <div className={styles.wrapper} key={index}>
           <h3>{grEx.year}</h3>
-          <p>{grEx.body}</p>
-          <p>{grEx.location}</p>
+          {grEx.entries.map((entry, index) => (
+            <div className={styles.entry} key={index}>
+              <ul>
+                <li>{entry.body}</li>
+                <p>{entry.location}</p>
+              </ul>
+            </div>
+          ))}
         </div>
       ))}
     </div>
@@ -68,9 +88,9 @@ export default function Exhibitions() {
           alt='A picture of Sketches'
         />
       </div>
-      {Prizes()}
-      {SoloExhibition()}
-      {GroupExhibition()}
+      <Prizes />
+      <SoloExhibition />
+      <GroupExhibition />
       <Footer />
     </>
   );

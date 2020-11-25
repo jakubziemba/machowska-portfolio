@@ -1,0 +1,39 @@
+.imageContainer {
+  margin-bottom: 24px;
+}
+.container {
+  margin-top: 24px;
+  margin-bottom: 48px;
+
+  .heading {
+    margin-bottom: 16px;
+  }
+
+  .wrapper {
+    margin-bottom: 24px;
+
+    .entry {
+      margin-top: 16px;
+
+      ul {
+        list-style: circle;
+        padding-left: 32px;
+        padding-right: 16px;
+
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+
+    p {
+      margin: 8px 16px 16px;
+      // font-weight: bold;
+
+      &:last-child {
+        font-size: 14px;
+        // font-weight: bold;
+      }
+    }
+  }
+}
