@@ -27,6 +27,7 @@ export default function Contact() {
         <a
           href='https://instagram.com/roksana_machowska'
           target='_blank'
+          rel='noreferrer'
         >
           <h3 className={styles.link}>@roksana_machowska</h3>
         </a>
