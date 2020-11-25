@@ -1,7 +1,57 @@
 import Header from '../components/Header';
 import Image from 'next/image';
 import Footer from '../components/Footer';
+import {
+  prizes,
+  soloExhibition,
+  groupExhibition,
+} from '../lib/resources';
 import styles from './image.module.scss';
+
+function Prizes() {
+  return (
+    <div>
+      <h2>Prizes</h2>
+      {prizes.map((prize, index) => (
+        <div key={index}>
+          <h3>{prize.year}</h3>
+          <p>{prize.body}</p>
+          <p>{prize.location}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function SoloExhibition() {
+  return (
+    <div>
+      <h2>Solo Exhibition</h2>
+      {soloExhibition.map((ex, index) => (
+        <div key={index}>
+          <h3>{ex.year}</h3>
+          <p>{ex.body}</p>
+          <p>{ex.location}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function GroupExhibition() {
+  return (
+    <div>
+      <h2>Group Exhibition</h2>
+      {groupExhibition.map((grEx, index) => (
+        <div key={index}>
+          <h3>{grEx.year}</h3>
+          <p>{grEx.body}</p>
+          <p>{grEx.location}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function Exhibitions() {
   return (
@@ -18,81 +68,9 @@ export default function Exhibitions() {
           alt='A picture of Sketches'
         />
       </div>
-      <div>
-        <h2>Prizes</h2>
-        <p>
-          2020
-          <br />
-          Scholarships for the artistic achievements, from the
-          Minister of Science and Higher Education,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2020
-          <br />
-          Scholarships for the artistic achievements, from the Rector
-          of the Maria Grzegorzewska University in Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2019
-          <br />
-          Scholarships for the artistic achievements, the the Rector
-          of Maria Grzegorzewska University in Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2019
-          <br />
-          Scholarships for the artistic achievements, from the Capital
-          City of Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2018
-          <br />
-          Scholarships for the artistic achievements, from the Rector
-          of the Maria Grzegorzewska University in Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2018
-          <br />
-          Scholarships for the artistic achievements, from the Capital
-          City of Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2017
-          <br />
-          Scholarships for the artistic achievements, from the Rector
-          of the Maria Grzegorzewska University in Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2017
-          <br />
-          Scholarships for the artistic achievements, from the Capital
-          City of Warsaw,
-          <br />
-          Warsaw, Poland
-          <br />
-          <br />
-          2016
-          <br />
-          Art competition, Prize- first prize, the Maria Grzegorzewska
-          University in Warsaw,
-          <br />
-          Warsaw, Poland
-        </p>
-      </div>
+      {Prizes()}
+      {SoloExhibition()}
+      {GroupExhibition()}
       <Footer />
     </>
   );
