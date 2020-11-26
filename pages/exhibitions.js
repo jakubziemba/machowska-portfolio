@@ -1,6 +1,8 @@
 import Header from '../components/Header';
 import Image from 'next/image';
+import Menu from '../components/Menu';
 import Footer from '../components/Footer';
+
 import {
   prizes,
   soloExhibition,
@@ -75,23 +77,28 @@ function GroupExhibition() {
 
 export default function Exhibitions() {
   return (
-    <>
+    <div>
       <Header title='Exhibitions' />
-      <div className={styles.imageContainer}>
-        <Image
-          src='/images/sketch2.png'
-          quality={100}
-          width={668}
-          height={1000}
-          layout='responsive'
-          priority={true}
-          alt='A picture of Sketches'
-        />
+      <div className={styles.main}>
+        <div className={styles.imageContainer}>
+          <Image
+            src='/images/sketch2.png'
+            quality={100}
+            width={668}
+            height={1000}
+            layout='responsive'
+            priority={true}
+            alt='A picture of Sketches'
+          />
+        </div>
+        <div className={styles.menu}>
+          <Menu />
+        </div>
+        <Prizes />
+        <SoloExhibition />
+        <GroupExhibition />
       </div>
-      <Prizes />
-      <SoloExhibition />
-      <GroupExhibition />
       <Footer />
-    </>
+    </div>
   );
 }
