@@ -3,8 +3,9 @@
     display: none;
   }
 
-  .image {
+  .imageContainer {
     margin-bottom: 24px;
+    pointer-events: none;
   }
 
   .statement span {
