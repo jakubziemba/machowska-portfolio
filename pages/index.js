@@ -6,7 +6,7 @@ import styles from './home.module.scss';
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.siteWrapper}>
       <div className={styles.header}>
         <HomeHeader />
       </div>
