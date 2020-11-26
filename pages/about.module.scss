@@ -18,27 +18,22 @@
     flex-direction: column;
     height: 100%;
 
-    .content {
-      display: flex;
-      flex-direction: row;
-
-      .menu {
-        display: flex;
-        position: fixed;
-      }
-
-      .container {
-        margin-left: 200px;
-
-        p {
-          font-size: 20px;
-          line-height: 1.5;
-        }
-      }
+    .imageContainer {
+      display: none;
     }
 
-    .image {
-      display: none;
+    .menu {
+      display: flex;
+      position: fixed;
+    }
+
+    .container {
+      margin-left: 200px;
+
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
     }
   }
 }
