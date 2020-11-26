@@ -32,6 +32,7 @@
     .menu {
       display: flex;
       position: fixed;
+      padding-top: 60px;
     }
 
     .container {
@@ -67,6 +68,7 @@
     margin-right: 24px;
 
     .menu {
+      margin-top: 8px;
       li {
         font-size: 40px;
       }
@@ -93,6 +95,21 @@
     }
     .container {
       margin-left: 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main {
+    .menu {
+      padding-top: 60px;
+      li {
+        font-size: 54px;
+      }
+    }
+
+    .container {
+      margin-left: 400px;
     }
   }
 }

@@ -16,3 +16,27 @@
     }
   }
 }
+
+@media only screen and (min-width: 750px) {
+  .header {
+    ul {
+      justify-content: center;
+
+      li {
+        margin-left: 48px;
+        margin-right: 48px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    ul {
+      li {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+    }
+  }
+}
