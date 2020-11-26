@@ -26,6 +26,11 @@ export default function Contact() {
           <Menu />
         </div>
         <div className={styles.container}>
+          <p>
+            If you’d like to buy my works or you’re interested in
+            working together, feel free to send me a message via email
+            or Instagram DM.
+          </p>
           <h2>Email:</h2>{' '}
           <a href='mailto:roksana1159@gmail.com'>
             <h3 className={styles.link}>roksana1159@gmail.com</h3>
