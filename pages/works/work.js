@@ -27,18 +27,20 @@ export default function Work({ category }) {
           <h2 className={styles.title}>{work.title}</h2>
           <p className={styles.materials}>{work.materials}</p>
           <p className={styles.size}>{work.size}</p>
-          {work.path.map((path) => (
-            <div className={styles.imageWrapper} key={uuidv4()}>
-              <Image
-                src={path}
-                alt={`Picture of the "${work.title}" painting`}
-                width={668}
-                height={1000}
-                quality={100}
-                priority={true}
-              />
-            </div>
-          ))}
+          <div className={styles.imageContainer}>
+            {work.path.map((path) => (
+              <div className={styles.imageWrapper} key={uuidv4()}>
+                <Image
+                  src={path}
+                  alt={`Picture of the "${work.title}" painting`}
+                  width={668}
+                  height={1000}
+                  quality={100}
+                  priority={true}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>
