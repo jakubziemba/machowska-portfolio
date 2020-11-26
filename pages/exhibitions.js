@@ -78,7 +78,9 @@ function GroupExhibition() {
 export default function Exhibitions() {
   return (
     <div>
-      <Header title='Exhibitions' />
+      <div className={styles.header}>
+        <Header title='Exhibitions' />
+      </div>
       <div className={styles.main}>
         <div className={styles.imageContainer}>
           <Image

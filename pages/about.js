@@ -7,7 +7,9 @@ import styles from './about.module.scss';
 export default function About() {
   return (
     <div>
-      <Header title='About' />
+      <div className={styles.header}>
+        <Header title='About' />
+      </div>
       <div className={styles.main}>
         <div className={styles.imageContainer}>
           <Image
@@ -26,7 +28,7 @@ export default function About() {
         <div className={styles.container}>
           <p>
             <span>Roksana Machowska</span>, was born in 1996 in
-            Warsaw. She holds a Master of Fine Arts. She obtained
+            Warsaw. She holds a&nbsp;Master of Fine Arts. She obtained
             eight scholarships for the best students for the artistic
             achievements: including from the Capital City of Warsaw
             (2016–2019), or the Minister of Science and Higher
@@ -42,24 +44,26 @@ export default function About() {
           <p className={styles.statement}>
             <span>Artist Statement</span>
             <br />
-            Nature is a very important topic of my work. I think
-            nature is a fascinating element that we are unable to
-            fully understand. As the primary state of the environment,
-            it is unlimited and can increase a feeling of peace as
-            well as the opposite state of anxiety. Nature, along with
-            the phenomena and processes occurring in it, has been a
-            frequent motive in the works of artists over the
-            centuries. I often devide the landscape that I see into
-            modules, which I arrange in various parts of my
-            composition. I create abstract works in which I want to
-            express the powerful element of nature. I leave the
-            mimetic representation of reality and focused on showing
-            the changing elements. Currently, I continue to develop
-            the subject of the nature using abstract forms. I focus on
-            shapes and synthesis of surrounding reality. Many of my
-            works until now were made in black and white. Recently I
-            have started to introduce a lot of colors into my
-            compositions. I also try to look for them in nature.
+            Nature is a&nbsp;very important topic of&nbsp;my work.
+            I&nbsp;think nature is&nbsp;a&nbsp;fascinating element
+            that we are unable to fully understand. As the primary
+            state of&nbsp;the environment, it is unlimited and can
+            increase a&nbsp;feeling of&nbsp;peace as well as the
+            opposite state of&nbsp;anxiety. Nature, along with the
+            phenomena and processes occurring in it, has been
+            a&nbsp;frequent motive in the works of artists over the
+            centuries. I&nbsp;often devide the landscape that
+            I&nbsp;see into modules, which I&nbsp;arrange in various
+            parts of my composition. I&nbsp;create abstract works in
+            which I&nbsp;want to express the powerful element of
+            nature. I&nbsp;leave the mimetic representation of reality
+            and focused on showing the changing elements. Currently,
+            I&nbsp;continue to develop the subject of the nature using
+            abstract forms. I&nbsp;focus on shapes and synthesis of
+            surrounding reality. Many of my works until now were made
+            in black and white. Recently I&nbsp;have started to
+            introduce a&nbsp;lot of colors into my compositions.
+            I&nbsp;also try to look for them in nature.
           </p>
         </div>
       </div>
