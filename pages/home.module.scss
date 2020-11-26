@@ -5,14 +5,16 @@
 }
 
 @media only screen and (min-width: 668px) {
+  .header {
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+
   .main {
     display: flex;
     flex-direction: column;
     height: 100%;
-
-    .header {
-      margin-left: 16px;
-    }
+    margin-top: 36px;
 
     .imageContainer {
       margin-left: 150px;
@@ -23,9 +25,53 @@
       display: flex;
       position: fixed;
       margin-left: 16px;
+      margin-top: 72px;
 
       li {
         font-size: 64px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .main {
+    .menu {
+      margin-top: 90px;
+
+      li {
+        font-size: 72px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .main {
+    .menu {
+      margin-top: 120px;
+
+      li {
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .header {
+    margin-left: 40px;
+  }
+  .main {
+    .imageContainer {
+      margin-right: 48px;
+    }
+    .menu {
+      margin-top: 200px;
+      margin-left: 40px;
+
+      li {
+        font-size: 90px;
       }
     }
   }

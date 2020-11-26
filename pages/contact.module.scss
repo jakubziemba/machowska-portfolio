@@ -23,11 +23,18 @@
 }
 
 @media only screen and (min-width: 668px) {
+  .header {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 8px;
+  }
   .main {
     display: flex;
     flex-direction: column;
     min-height: 50vh;
     height: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
 
     .imageContainer {
       display: none;
@@ -38,7 +45,7 @@
     }
 
     .container {
-      margin-left: 200px;
+      margin-left: 210px;
 
       h2 {
         font-size: 24px;
@@ -47,6 +54,58 @@
       h3 {
         font-size: 20px;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .header {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .main {
+    margin-left: 24px;
+    margin-right: 24px;
+
+    .menu {
+      li {
+        font-size: 40px;
+      }
+    }
+    .container {
+      margin-left: 250px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    margin: 16px 24px 24px 24px;
+  }
+
+  .main {
+    margin-left: 32px;
+    margin-right: 32px;
+
+    .menu {
+      li {
+        font-size: 48px;
+      }
+    }
+    .container {
+      margin-left: 300px;
     }
   }
 }
