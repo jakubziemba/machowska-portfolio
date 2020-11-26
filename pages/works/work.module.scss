@@ -49,11 +49,28 @@
   }
 }
 
-@media screen and (max-width: 384px) {
+@media only screen and (max-width: 384px) {
   .content {
     .container {
       .title {
         text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .imageContainer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+
+    .imageWrapper {
+      flex: 1 0 400px;
+
+      &:first-of-type {
+        margin-right: 32px;
       }
     }
   }
