@@ -3,3 +3,30 @@
     margin-bottom: 24px;
   }
 }
+
+@media only screen and (min-width: 668px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+      margin-left: 16px;
+    }
+
+    .imageContainer {
+      margin-left: 150px;
+      margin-right: 32px;
+    }
+
+    .menu {
+      display: flex;
+      position: fixed;
+      margin-left: 16px;
+
+      li {
+        font-size: 64px;
+      }
+    }
+  }
+}
