@@ -69,6 +69,7 @@
 
     .imageWrapper {
       flex: 1 0 400px;
+      max-height: 1000px;
 
       &:first-of-type {
         margin-right: 32px;
