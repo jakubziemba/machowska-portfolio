@@ -66,19 +66,19 @@
     .menu {
       display: flex;
       position: fixed;
-      padding-top: 60px;
     }
 
     .container {
-      margin-left: 210px;
+      margin-left: 230px;
 
       .heading {
-        font-size: 28px;
+        font-size: 20px;
         margin-top: 0;
       }
 
       h3 {
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: normal;
       }
 
       ul {
@@ -120,7 +120,7 @@
       }
     }
     .container {
-      margin-left: 260px;
+      margin-left: 280px;
     }
   }
 }
@@ -135,9 +135,6 @@
     margin-right: 32px;
 
     .menu {
-      li {
-        font-size: 48px;
-      }
     }
     .container {
       margin-left: 310px;
@@ -147,6 +144,12 @@
 
 @media only screen and (min-width: 1200px) {
   .main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    width: 100%;
+    margin: auto auto;
+
     .menu {
       padding-top: 60px;
       li {
@@ -154,8 +157,12 @@
       }
     }
 
-    .container {
-      margin-left: 400px;
+    .containerWrapper {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      align-self: center;
+      margin-left: 80px;
     }
   }
 }

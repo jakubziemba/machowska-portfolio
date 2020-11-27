@@ -59,11 +59,10 @@
     .menu {
       display: flex;
       position: fixed;
-      padding-top: 60px;
     }
 
     .container {
-      margin-left: 210px;
+      margin-left: 230px;
 
       h2 {
         font-size: 24px;
@@ -105,7 +104,7 @@
       }
     }
     .container {
-      margin-left: 250px;
+      margin-left: 280px;
     }
   }
 }
@@ -118,11 +117,21 @@
   .main {
     margin-left: 32px;
     margin-right: 32px;
+
+    .container {
+      margin-left: 300px;
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    width: 100%;
+    margin: auto auto;
+
     .menu {
       padding-top: 60px;
       li {
@@ -130,6 +139,8 @@
       }
     }
     .container {
+      display: flex;
+      flex-direction: column;
       margin-left: 400px;
     }
   }

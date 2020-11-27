@@ -96,9 +96,11 @@ export default function Exhibitions() {
         <div className={styles.menu}>
           <Menu />
         </div>
-        <Prizes />
-        <SoloExhibition />
-        <GroupExhibition />
+        <div className={styles.containerWrapper}>
+          <Prizes />
+          <SoloExhibition />
+          <GroupExhibition />
+        </div>
       </div>
       <Footer />
     </div>

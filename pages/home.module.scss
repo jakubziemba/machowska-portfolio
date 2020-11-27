@@ -1,6 +1,7 @@
 .main {
   .imageContainer {
     margin-bottom: 24px;
+    pointer-events: none;
   }
 }
 
@@ -19,7 +20,6 @@
     .imageContainer {
       margin-left: 150px;
       margin-right: 32px;
-      pointer-events: none;
     }
 
     .menu {
@@ -94,15 +94,16 @@
       .menu {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         position: static;
         padding-top: 0;
         margin-left: 32px;
-        margin-top: 280px;
+        margin-top: 200px;
         order: -1;
         max-width: 40%;
 
         li {
-          font-size: 60px;
+          font-size: 54px;
         }
       }
 
@@ -113,7 +114,8 @@
         min-width: 55%;
 
         div {
-          height: 100vh;
+          max-height: 110vh;
+          overflow: visible;
 
           img {
             object-fit: cover;
