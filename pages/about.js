@@ -32,7 +32,7 @@ export default function About() {
             eight scholarships for the best students for the artistic
             achievements: including from the Capital City of Warsaw
             (2016–2019), or the Minister of Science and Higher
-            Education (2020). She works in a variety of mediums:
+            Education (2020). She works in a&nbsp;variety of mediums:
             printmaking, digital graphics, painting, artistic fabric,
             design and installation. She took part in some group shows
             and held her solo exhibitions as well; including one at
