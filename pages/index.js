@@ -13,10 +13,10 @@ export default function Home() {
       <div className={styles.main}>
         <div className={styles.imageContainer}>
           <Image
-            src='/images/me.png'
+            src='/images/me.jpg'
             quality={100}
-            width={668}
-            height={1000}
+            width={1333}
+            height={2000}
             layout='responsive'
             priority={true}
             alt='Photo of Roksana Machowska'
