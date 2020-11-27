@@ -102,7 +102,7 @@
         position: static;
         padding-top: 0;
         margin-left: 32px;
-        margin-top: 250px;
+        margin-top: 280px;
         order: -1;
         max-width: 40%;
 
@@ -125,6 +125,18 @@
             object-fit: cover;
             object-position: 50% 80%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .siteWrapper {
+    .main {
+      .menu {
+        li {
+          font-size: 72px;
         }
       }
     }
