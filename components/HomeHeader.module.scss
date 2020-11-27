@@ -23,7 +23,15 @@
 @media only screen and (min-width: 900px) {
   .header {
     .home {
-      font-size: 48px;
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    .home {
+      font-size: 40px;
     }
   }
 }
