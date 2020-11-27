@@ -98,12 +98,12 @@
         position: static;
         padding-top: 0;
         margin-left: 32px;
-        margin-top: 200px;
+        margin-top: 250px;
         order: -1;
         max-width: 40%;
 
         li {
-          font-size: 54px;
+          font-size: 64px;
         }
       }
 
@@ -114,12 +114,12 @@
         min-width: 55%;
 
         div {
-          max-height: 110vh;
+          max-height: 120vh;
           overflow: visible;
 
           img {
             object-fit: cover;
-            object-position: 50% 75%;
+            object-position: 50% 80%;
           }
         }
       }
