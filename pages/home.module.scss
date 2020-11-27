@@ -116,10 +116,10 @@
         margin-left: 0;
         margin-bottom: 0;
         min-width: 55%;
+        max-width: 70%;
 
         div {
           max-height: 120vh;
-          overflow: visible;
 
           img {
             object-fit: cover;
@@ -137,6 +137,12 @@
       .menu {
         li {
           font-size: 72px;
+        }
+      }
+
+      .imageContainer {
+        div {
+          max-height: 140vh;
         }
       }
     }
