@@ -16,7 +16,9 @@ export default function Menu() {
           className={worksActive ? styles.active : undefined}
           onClick={() => setWorksActive(!worksActive)}
         >
-          <a>Works</a>
+          <a className={worksActive ? styles.active : undefined}>
+            Works
+          </a>
         </li>
         {worksActive && <Works />}
         <li>
