@@ -16,7 +16,7 @@ export default function Menu() {
           className={worksActive ? styles.active : undefined}
           onClick={() => setWorksActive(!worksActive)}
         >
-          <Link href='#'>Works</Link>
+          <Link href='/'>Works</Link>
         </li>
         {worksActive && <Works />}
         <li>
