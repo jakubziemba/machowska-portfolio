@@ -3,26 +3,6 @@
 
   a {
     font-size: 36px;
-    position: relative;
-  }
-
-  a:after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    bottom: -2px;
-    left: 0px;
-    background: #272623;
-    width: 80px;
-
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.3s;
-  }
-  a:hover:after {
-    width: 120px;
   }
 }
 
@@ -30,6 +10,26 @@
   .works {
     a {
       font-size: 28px;
+      position: relative;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      bottom: -2px;
+      left: 0px;
+      background: #272623;
+      width: 80px;
+
+      -o-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      transition: 0.3s;
+    }
+    a:hover:after {
+      width: 120px;
     }
   }
 }
