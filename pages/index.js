@@ -90,7 +90,10 @@ export default function Home() {
       initial='initial'
       animate='animate'
       variants={content}
-      exit={{ opacity: 0 }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
+      }}
       className={styles.siteWrapper}
     >
       <InitialTransition />
