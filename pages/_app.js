@@ -1,9 +1,10 @@
+import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
-    <>
+    <AnimatePresence exitBeforeEnter>
       <Head>
         <link
           rel='apple-touch-icon'
@@ -83,8 +84,8 @@ function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#ffffff' />
         <title>Roksana Machowska</title>
       </Head>
-      <Component {...pageProps} />
-    </>
+      <Component key={router.route} {...pageProps} />
+    </AnimatePresence>
   );
 }
 

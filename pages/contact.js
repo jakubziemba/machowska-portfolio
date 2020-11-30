@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Image from 'next/image';
 import Menu from '../components/Menu';
@@ -6,7 +7,7 @@ import styles from './contact.module.scss';
 
 export default function Contact() {
   return (
-    <div>
+    <motion.div exit={{ opacity: 0 }}>
       <div className={styles.header}>
         <Header title='Contact' />
       </div>
@@ -46,6 +47,6 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }

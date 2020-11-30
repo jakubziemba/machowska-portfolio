@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Image from 'next/image';
 import Menu from '../components/Menu';
@@ -77,7 +78,7 @@ function GroupExhibition() {
 
 export default function Exhibitions() {
   return (
-    <div>
+    <motion.div exit={{ opacity: 0 }}>
       <div className={styles.header}>
         <Header title='Exhibitions' />
       </div>
@@ -103,6 +104,6 @@ export default function Exhibitions() {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }

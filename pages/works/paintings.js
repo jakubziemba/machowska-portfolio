@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Header from '../../components/Header';
 import WorksHeader from '../../components/WorksHeader';
 import Work from './work';
@@ -6,7 +7,7 @@ import styles from './art.module.scss';
 
 export default function Paintings() {
   return (
-    <div>
+    <motion.div exit={{ opacity: 0 }}>
       <div className={styles.header}>
         <Header title='Paintings' />
         <WorksHeader />
@@ -15,6 +16,6 @@ export default function Paintings() {
         <Work category='paintings' />
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }

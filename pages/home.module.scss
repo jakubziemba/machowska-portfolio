@@ -1,3 +1,17 @@
+.introContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro {
+    position: relative;
+    z-index: 50;
+    width: 100vw;
+    background-color: #fefefe;
+  }
+}
+
 .main {
   .imageContainer {
     margin-bottom: 24px;

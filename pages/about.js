@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Image from 'next/image';
 import Menu from '../components/Menu';
@@ -6,7 +7,7 @@ import styles from './about.module.scss';
 
 export default function About() {
   return (
-    <div>
+    <motion.div exit={{ opacity: 0 }}>
       <div className={styles.header}>
         <Header title='About' />
       </div>
@@ -68,6 +69,6 @@ export default function About() {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
