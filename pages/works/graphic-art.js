@@ -5,6 +5,32 @@ import Work from './work';
 import Footer from '../../components/Footer';
 import styles from './art.module.scss';
 
+const header = {
+  initial: { y: -30, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.4,
+      ease: [0, 0.55, 0.45, 1],
+    },
+  },
+  exit: { y: -30, opacity: 0 },
+};
+
+const main = {
+  initial: { y: 30, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.4,
+      ease: [0, 0.55, 0.45, 1],
+    },
+  },
+  exit: { y: 30, opacity: 0 },
+};
+
 export default function graphicArt() {
   return (
     <motion.div
@@ -13,13 +39,25 @@ export default function graphicArt() {
         transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
       }}
     >
-      <div className={styles.header}>
+      <motion.div
+        initial='initial'
+        animate='animate'
+        exit='exit'
+        variants={header}
+        className={styles.header}
+      >
         <Header title='Graphic Art' />
         <WorksHeader />
-      </div>
-      <div className={styles.main}>
+      </motion.div>
+      <motion.div
+        initial='initial'
+        animate='animate'
+        exit='exit'
+        variants={main}
+        className={styles.main}
+      >
         <Work category='graphicArt' />
-      </div>
+      </motion.div>
       <Footer />
     </motion.div>
   );

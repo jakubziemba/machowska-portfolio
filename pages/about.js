@@ -5,6 +5,46 @@ import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import styles from './about.module.scss';
 
+const header = {
+  initial: { y: -10, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 2.4,
+      ease: [0, 0.55, 0.45, 1],
+    },
+  },
+  exit: { y: -10, opacity: 0 },
+};
+
+const image = {
+  initial: { x: 50, opacity: 0 },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      duration: 1.3,
+      ease: [0.6, -0.05, 0.01, 0.99],
+    },
+  },
+  exit: { x: 50, opacity: 0 },
+};
+
+const menu = {
+  initial: { x: -30, opacity: 0 },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.7,
+      ease: [0.6, -0.05, 0.01, 0.99],
+    },
+  },
+  exit: { x: -30, opacity: 0 },
+};
+
 export default function About() {
   return (
     <motion.div
@@ -13,11 +53,23 @@ export default function About() {
         transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
       }}
     >
-      <div className={styles.header}>
+      <motion.div
+        initial='initial'
+        animate='animate'
+        exit='exit'
+        variants={header}
+        className={styles.header}
+      >
         <Header title='About' />
-      </div>
+      </motion.div>
       <div className={styles.main}>
-        <div className={styles.imageContainer}>
+        <motion.div
+          initial='initial'
+          animate='animate'
+          exit='exit'
+          variants={image}
+          className={styles.imageContainer}
+        >
           <Image
             src='/images/me2.png'
             quality={100}
@@ -27,11 +79,23 @@ export default function About() {
             priority={true}
             alt='Photo of Roksana Machowska'
           />
-        </div>
-        <div className={styles.menu}>
+        </motion.div>
+        <motion.div
+          initial='initial'
+          animate='animate'
+          exit='exit'
+          variants={menu}
+          className={styles.menu}
+        >
           <Menu />
-        </div>
-        <div className={styles.container}>
+        </motion.div>
+        <motion.div
+          initial='initial'
+          animate='animate'
+          exit='exit'
+          variants={image}
+          className={styles.container}
+        >
           <p>
             <span>Roksana Machowska</span>, was born in 1996 in
             Warsaw. She holds a&nbsp;Master of Fine Arts. She obtained
@@ -71,7 +135,7 @@ export default function About() {
             introduce a&nbsp;lot of colors into my compositions.
             I&nbsp;also try to look for them in nature.
           </p>
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </motion.div>

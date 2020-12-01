@@ -5,111 +5,81 @@ import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import styles from './home.module.scss';
 
-const blackBox = {
-  initial: {
-    height: '150vh',
-    bottom: 0,
-  },
-  animate: {
-    height: 0,
-    transition: {
-      when: 'afterChildren',
-      duration: 1.5,
-      ease: [0.87, 0, 0.13, 1],
-    },
-  },
-};
-
-const InitialTransition = () => {
-  return (
-    <div className={styles.introContainer}>
-      <motion.div
-        className={styles.intro}
-        initial='initial'
-        animate='animate'
-        variants={blackBox}
-        onAnimationStart={() =>
-          (document.body.style.overflow = 'hidden')
-        }
-        onAnimationComplete={() =>
-          (document.body.style.overflow = 'visible')
-        }
-      ></motion.div>
-    </div>
-  );
-};
-
 const content = {
   animate: {
-    transition: { staggerChildren: 0.2, delayChildren: 2.8 },
+    transition: { staggerChildren: 1, delayChildren: 2 },
+  },
+  exit: {
+    opacity: 0,
+    transition: { ease: [0, 0.55, 0.45, 1], duration: 0.2 },
   },
 };
 
 const header = {
-  initial: { scale: 0.95, x: -30, opacity: 0 },
+  initial: { y: -30, opacity: 0 },
   animate: {
-    scale: 1,
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
-      duration: 3.3,
+      duration: 2,
       ease: [0, 0.55, 0.45, 1],
     },
   },
+  exit: { y: -30, opacity: 0 },
 };
 
 const image = {
-  initial: { scale: 0.95, y: -20, opacity: 0 },
+  initial: { x: 50, opacity: 0 },
   animate: {
-    scale: 1,
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
-      duration: 3,
+      delay: 0.3,
+      duration: 1.3,
       ease: [0.6, -0.05, 0.01, 0.99],
     },
   },
+  exit: { x: 50, opacity: 0 },
 };
 
 const menu = {
-  initial: { scale: 0.95, y: -30, opacity: 0 },
+  initial: { x: -30, opacity: 0 },
   animate: {
-    scale: 1,
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
-      duration: 2.5,
+      duration: 1.7,
       ease: [0.6, -0.05, 0.01, 0.99],
     },
   },
+  exit: { x: -30, opacity: 0 },
 };
 
 export default function Home() {
   return (
     <motion.div
-      initial='initial'
       animate='animate'
       variants={content}
-      exit={{
-        opacity: 0,
-        transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
-      }}
+      exit='exit'
       className={styles.siteWrapper}
     >
-      <InitialTransition />
       <motion.div
+        key='header'
         initial='initial'
         animate='animate'
+        exit='exit'
         variants={header}
         className={styles.header}
       >
         <HomeHeader />
       </motion.div>
+
       <div className={styles.main}>
         <motion.div
           className={styles.imageContainer}
           initial='initial'
           animate='animate'
+          exit='exit'
           variants={image}
         >
           <Image
@@ -125,6 +95,7 @@ export default function Home() {
         <motion.div
           initial='initial'
           animate='animate'
+          exit='exit'
           variants={menu}
           className={styles.menu}
         >
