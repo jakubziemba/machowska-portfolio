@@ -36,7 +36,7 @@ export default function Work({ category }) {
                   width={668}
                   height={1000}
                   quality={100}
-                  priority={true}
+                  loading='lazy'
                 />
               </div>
             ))}
