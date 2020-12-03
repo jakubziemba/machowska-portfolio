@@ -6,16 +6,16 @@ import Footer from '../components/Footer';
 import styles from './contact.module.scss';
 
 const header = {
-  initial: { y: -10, opacity: 0 },
+  initial: { y: -20, opacity: 0 },
   animate: {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 2.4,
+      duration: 1,
       ease: [0, 0.55, 0.45, 1],
     },
   },
-  exit: { y: -10, opacity: 0 },
+  exit: { y: -20, opacity: 0 },
 };
 
 const image = {

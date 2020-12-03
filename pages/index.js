@@ -22,7 +22,7 @@ const header = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.7,
       ease: [0, 0.55, 0.45, 1],
     },
   },
