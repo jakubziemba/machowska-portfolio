@@ -2,25 +2,17 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // position: absolute;
-  // bottom: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
 
-  margin-top: 250px;
+  margin-top: 150px;
 
   .copy {
     font-size: 0.7em;
     color: #989898;
   }
-
-  .icon {
-    margin-bottom: 8px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
-    display: none;
+    // display: none;
   }
 }
