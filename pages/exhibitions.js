@@ -90,7 +90,7 @@ const header = {
 };
 
 const image = {
-  initial: { x: 30, opacity: 0 },
+  initial: { x: 50, opacity: 0 },
   animate: {
     x: 0,
     opacity: 1,
@@ -100,7 +100,7 @@ const image = {
       ease: [0.6, -0.05, 0.01, 0.99],
     },
   },
-  exit: { x: 30, opacity: 0 },
+  exit: { x: 50, opacity: 0 },
 };
 
 const menu = {
@@ -119,10 +119,10 @@ const menu = {
 export default function Exhibitions() {
   return (
     <motion.div
-    // exit={{
-    //   opacity: 0,
-    //   transition: { duration: 0.5, ease: [0, 0.55, 0.45, 1] },
-    // }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5, ease: [0, 0.55, 0.45, 1] },
+      }}
     >
       <motion.div
         initial='initial'
@@ -162,10 +162,10 @@ export default function Exhibitions() {
         </motion.div>
         {/* Using 'image' variant for text container, as I want exact the same animation effect */}
         <motion.div
-          // initial='initial'
-          // animate='animate'
-          // exit='exit'
-          // variants={image}
+          initial='initial'
+          animate='animate'
+          exit='exit'
+          variants={image}
           className={styles.containerWrapper}
         >
           <Prizes />

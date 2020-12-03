@@ -28,6 +28,7 @@ body {
   user-select: none;
   background-color: #fefefe;
   color: #272623;
+  overflow-x: hidden;
 }
 
 html {

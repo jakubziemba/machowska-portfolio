@@ -48,10 +48,10 @@ const menu = {
 export default function Contact() {
   return (
     <motion.div
-      // exit={{
-      //   opacity: 0,
-      //   transition: { duration: 0.5, ease: [0, 0.55, 0.45, 1] },
-      // }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5, ease: [0, 0.55, 0.45, 1] },
+      }}
       className={styles.siteWrapper}
     >
       <motion.div
