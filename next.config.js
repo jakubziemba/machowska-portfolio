@@ -1,29 +1,19 @@
-// module.exports = {
-//   images: {
-//     deviceSizes: [
-//       320,
-//       360,
-//       375,
-//       414,
-//       480,
-//       568,
-//       640,
-//       667,
-//       736,
-//       750,
-//       768,
-//       812,
-//       828,
-//       834,
-//       1024,
-//       1080,
-//       1112,
-//       1200,
-//       1366,
-//       1600,
-//       1920,
-//       2048,
-//       3840,
-//     ],
-//   },
-// };
+// next.config.js
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
+const imagemin = require('imagemin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+
+module.exports = withPlugins([
+  [
+    optimizedImages,
+    {
+      /* config for next-optimized-images */
+      optimizeImagesInDev: true,
+      mozjpeg: { quality: 100 },
+    },
+  ],
+  [imagemin],
+  [imageminMozjpeg],
+  // your other plugins here
+]);

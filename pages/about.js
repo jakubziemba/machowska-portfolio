@@ -48,10 +48,10 @@ const menu = {
 export default function About() {
   return (
     <motion.div
-      exit={{
-        opacity: 0,
-        transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
-      }}
+    // exit={{
+    //   opacity: 0,
+    //   transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
+    // }}
     >
       <motion.div
         initial='initial'
