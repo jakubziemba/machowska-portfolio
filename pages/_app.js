@@ -1,8 +1,8 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -85,25 +85,7 @@ function MyApp({ Component, pageProps, router }) {
         <title>Roksana Machowska</title>
       </Head>
       <AnimatePresence exitBeforeEnter>
-        <motion.div
-          key={router.route}
-          initial='pageInitial'
-          animate='pageAnimate'
-          exit='pageExit'
-          variants={{
-            pageInitial: {
-              opacity: 0,
-            },
-            pageAnimate: {
-              opacity: 1,
-            },
-            pageExit: {
-              opacity: 0,
-            },
-          }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
+        <Component {...pageProps} />
       </AnimatePresence>
     </>
   );
