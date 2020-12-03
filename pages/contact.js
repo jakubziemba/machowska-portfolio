@@ -77,7 +77,6 @@ export default function Contact() {
             width={668}
             height={1000}
             layout='responsive'
-            priority={true}
             alt='A picture of Sketches'
           />
         </motion.div>

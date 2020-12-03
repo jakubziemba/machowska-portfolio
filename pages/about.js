@@ -76,7 +76,6 @@ export default function About() {
             width={668}
             height={1000}
             layout='responsive'
-            priority={true}
             alt='Photo of Roksana Machowska'
           />
         </motion.div>
