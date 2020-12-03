@@ -2,11 +2,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import HomeHeader from '../components/HomeHeader';
 import Menu from '../components/Menu';
-import Footer from '../components/Footer';
 import styles from './home.module.scss';
 
 const content = {
+  initial: { opacity: 0 },
   animate: {
+    opacity: 1,
     transition: { staggerChildren: 1, delayChildren: 2 },
   },
   exit: {
@@ -58,6 +59,7 @@ const menu = {
 export default function Home() {
   return (
     <motion.div
+      initial='initial'
       animate='animate'
       variants={content}
       exit='exit'
@@ -88,7 +90,6 @@ export default function Home() {
             width={1333}
             height={2000}
             layout='responsive'
-            priority={true}
             alt='Photo of Roksana Machowska'
           />
         </motion.div>
@@ -102,7 +103,6 @@ export default function Home() {
           <Menu />
         </motion.div>
       </div>
-      <Footer />
     </motion.div>
   );
 }
