@@ -34,8 +34,9 @@
   svg {
     align-self: flex-start;
     font-size: 1.25rem;
-    margin: 16px 16px 8px 16px;
+    margin: 16px 36px 8px 36px;
     cursor: pointer;
+    transform: translateX(-50%);
   }
 }
 
@@ -44,27 +45,33 @@
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 8px;
+
+    svg {
+      margin: 16px 24px 8px 24px;
+    }
   }
 }
 
 @media only screen and (min-width: 900px) {
   .container {
     margin-top: 16px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 36px;
+    margin-right: 36px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .container {
-    margin: 16px 24px 16px 24px;
+    margin: 16px 32px 16px 32px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
-    svg {
-      // margin-left: 0;
+    .icon {
+      svg {
+        margin-left: 32px;
+      }
     }
   }
 }

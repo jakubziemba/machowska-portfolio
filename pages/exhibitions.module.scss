@@ -47,11 +47,6 @@
 }
 
 @media only screen and (min-width: 668px) {
-  .header {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 8px;
-  }
   .main {
     display: flex;
     flex-direction: column;
@@ -94,8 +89,6 @@
 
 @media only screen and (min-width: 750px) {
   .header {
-    margin-left: 16px;
-    margin-right: 16px;
   }
   .main {
     margin-left: 16px;
@@ -105,9 +98,8 @@
 
 @media only screen and (min-width: 900px) {
   .header {
-    margin-top: 16px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
   .main {
     margin-left: 24px;
@@ -127,7 +119,8 @@
 
 @media only screen and (min-width: 1024px) {
   .header {
-    margin: 16px 24px 24px 24px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .main {
