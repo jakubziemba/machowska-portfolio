@@ -52,6 +52,7 @@ export default function Contact() {
         opacity: 0,
         transition: { duration: 0.5, ease: [0, 0.55, 0.45, 1] },
       }}
+      className={styles.siteWrapper}
     >
       <motion.div
         initial='initial'
