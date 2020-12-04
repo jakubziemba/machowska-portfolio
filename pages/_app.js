@@ -84,9 +84,7 @@ function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#ffffff' />
         <title>Roksana Machowska</title>
       </Head>
-      {/* <AnimatePresence exitBeforeEnter> */}
       <Component {...pageProps} />
-      {/* </AnimatePresence> */}
     </>
   );
 }
