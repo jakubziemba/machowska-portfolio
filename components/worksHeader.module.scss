@@ -26,6 +26,46 @@
         margin-left: 48px;
         margin-right: 48px;
       }
+
+      a {
+        position: relative;
+      }
+
+      a:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: -2px;
+        right: 50%;
+        background: #272623;
+        width: 0px;
+
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.3s;
+      }
+
+      a:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: -2px;
+        left: 50%;
+        background: #272623;
+        width: 0px;
+
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.3s;
+      }
+      a:hover:after,
+      a:hover:before {
+        width: 50%;
+      }
     }
   }
 }
