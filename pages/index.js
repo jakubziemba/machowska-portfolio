@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import HomeHeader from '../components/HomeHeader';
+import Image from 'next/image';
 import Menu from '../components/Menu';
+import { motion } from 'framer-motion';
 import styles from './home.module.scss';
 
 const content = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    transition: { staggerChildren: 1, delayChildren: 2 },
+    transition: { delay: 1, staggerChildren: 1, delayChildren: 2 },
   },
   exit: {
     opacity: 0,
@@ -17,9 +17,8 @@ const content = {
 };
 
 const header = {
-  initial: { y: -30, opacity: 0 },
+  initial: { opacity: 0 },
   animate: {
-    y: 0,
     opacity: 1,
     transition: {
       duration: 0.7,
@@ -30,9 +29,8 @@ const header = {
 };
 
 const image = {
-  initial: { x: 30, opacity: 0 },
+  initial: { opacity: 0 },
   animate: {
-    x: 0,
     opacity: 1,
     transition: {
       delay: 0.3,
@@ -44,9 +42,8 @@ const image = {
 };
 
 const menu = {
-  initial: { x: -30, opacity: 0 },
+  initial: { opacity: 0 },
   animate: {
-    x: 0,
     opacity: 1,
     transition: {
       duration: 1.7,
@@ -58,13 +55,7 @@ const menu = {
 
 export default function Home() {
   return (
-    <motion.div
-      initial='initial'
-      animate='animate'
-      variants={content}
-      exit='exit'
-      className={styles.siteWrapper}
-    >
+    <motion.div initial='initial' animate='animate' variants={content} exit='exit' className={styles.siteWrapper}>
       <motion.div
         key='header'
         initial='initial'
@@ -94,13 +85,7 @@ export default function Home() {
             alt='Photo of Roksana Machowska'
           />
         </motion.div>
-        <motion.div
-          initial='initial'
-          animate='animate'
-          exit='exit'
-          variants={menu}
-          className={styles.menu}
-        >
+        <motion.div initial='initial' animate='animate' exit='exit' variants={menu} className={styles.menu}>
           <Menu />
         </motion.div>
       </div>

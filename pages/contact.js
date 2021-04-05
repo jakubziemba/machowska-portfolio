@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Image from 'next/image';
 import Menu from '../components/Menu';
-import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
 import styles from './contact.module.scss';
 
 const header = {
@@ -19,7 +19,20 @@ const header = {
 };
 
 const image = {
-  initial: { x: 50, opacity: 0 },
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      duration: 1.3,
+      ease: [0.6, -0.05, 0.01, 0.99],
+    },
+  },
+  exit: { opacity: 0 },
+};
+
+const text = {
+  initial: { x: 30, opacity: 0 },
   animate: {
     x: 0,
     opacity: 1,
@@ -29,7 +42,7 @@ const image = {
       ease: [0.6, -0.05, 0.01, 0.99],
     },
   },
-  exit: { x: 50, opacity: 0 },
+  exit: { x: 30, opacity: 0 },
 };
 
 const menu = {
@@ -54,23 +67,11 @@ export default function Contact() {
       }}
       className={styles.siteWrapper}
     >
-      <motion.div
-        initial='initial'
-        animate='animate'
-        exit='exit'
-        variants={header}
-        className={styles.header}
-      >
+      <motion.div initial='initial' animate='animate' exit='exit' variants={header} className={styles.header}>
         <Header title='Contact' />
       </motion.div>
       <div className={styles.main}>
-        <motion.div
-          initial='initial'
-          animate='animate'
-          exit='exit'
-          variants={image}
-          className={styles.imageContainer}
-        >
+        <motion.div initial='initial' animate='animate' exit='exit' variants={image} className={styles.imageContainer}>
           <Image
             src='/images/sketch1.png'
             quality={100}
@@ -81,38 +82,20 @@ export default function Contact() {
           />
         </motion.div>
 
-        <motion.div
-          initial='initial'
-          animate='animate'
-          exit='exit'
-          variants={menu}
-          className={styles.menu}
-        >
+        <motion.div initial='initial' animate='animate' exit='exit' variants={menu} className={styles.menu}>
           <Menu />
         </motion.div>
-        {/* Using 'image' variant for text container, as I want exact the same animation effect */}
-        <motion.div
-          initial='initial'
-          animate='animate'
-          exit='exit'
-          variants={image}
-          className={styles.container}
-        >
+        <motion.div initial='initial' animate='animate' exit='exit' variants={text} className={styles.container}>
           <p>
-            If you’d like to buy my works or you’re interested in
-            working together, feel free to send me a message via email
-            or Instagram DM.
+            If you’d like to buy my works or you’re interested in working together, feel free to send me a message via
+            email or Instagram DM.
           </p>
           <h2>Email:</h2>{' '}
           <a href='mailto:roksana1159@gmail.com'>
             <h3 className={styles.link}>roksana1159@gmail.com</h3>
           </a>
           <h2>Instagram: </h2>{' '}
-          <a
-            href='https://instagram.com/roksana_machowska'
-            target='_blank'
-            rel='noreferrer'
-          >
+          <a href='https://instagram.com/roksana_machowska' target='_blank' rel='noreferrer'>
             <h3 className={styles.link}>@roksana_machowska</h3>
           </a>
         </motion.div>

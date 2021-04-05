@@ -78,10 +78,6 @@
 }
 
 @media only screen and (min-width: 750px) {
-  .header {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
   .main {
     margin-left: 16px;
     margin-right: 16px;
@@ -91,8 +87,8 @@
 @media only screen and (min-width: 900px) {
   .header {
     margin-top: 16px;
-    margin-left: 24px;
-    margin-right: 24px;
+    // margin-left: 24px;
+    // margin-right: 24px;
   }
   .main {
     margin-left: 24px;

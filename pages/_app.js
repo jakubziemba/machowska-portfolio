@@ -1,4 +1,3 @@
-import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 import '../styles/globals.css';
 
