@@ -32,6 +32,7 @@
   }
 
   svg {
+    width: 16px;
     align-self: flex-start;
     font-size: 1.25rem;
     margin: 16px 36px 8px 24px;
@@ -54,14 +55,16 @@
 
 @media only screen and (min-width: 750px) {
   .container {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .container {
     margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 
