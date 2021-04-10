@@ -1,30 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Roksana Machowska's Portfolio
 
-## Getting Started
+<a href="https://ibb.co/XWk61F5"><img src="https://i.ibb.co/p1rNc4K/roksana-machowska-main.jpg" alt="roksana-machowska-main" border="0"></a>
 
-First, run the development server:
+**A portfolio website for a polish artist.**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+For an artist, the most important quality of a website is that it will showcase and truly compliment their art. After seeing the client's work, consulting the ideas and inspirations, I designed and developed the portfolio website.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Because of the inherent minimalism and abstract nature of Roksana's works, we've decided to keep the design as minimal as possible, letting the images, typography and animations play the main role.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For the developement, I used React (Next.js) with CSS Modules and Framer Motion for the animations.
