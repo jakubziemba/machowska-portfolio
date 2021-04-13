@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Menu from '../components/Menu';
 import { motion } from 'framer-motion';
 import styles from './contact.module.scss';
+import { useMediaQuery } from 'react-responsive';
 
 const header = {
   initial: { y: -20, opacity: 0 },
@@ -45,6 +46,20 @@ const text = {
   exit: { x: 30, opacity: 0 },
 };
 
+const textMobile = {
+  initial: { y: 30, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      duration: 1.3,
+      ease: [0.6, -0.05, 0.01, 0.99],
+    },
+  },
+  exit: { x: 30, opacity: 0 },
+};
+
 const menu = {
   initial: { x: -30, opacity: 0 },
   animate: {
@@ -59,6 +74,7 @@ const menu = {
 };
 
 export default function Contact() {
+  const isMobile = useMediaQuery({ maxWidth: 667 });
   return (
     <motion.div
       exit={{
@@ -85,7 +101,13 @@ export default function Contact() {
         <motion.div initial='initial' animate='animate' exit='exit' variants={menu} className={styles.menu}>
           <Menu />
         </motion.div>
-        <motion.div initial='initial' animate='animate' exit='exit' variants={text} className={styles.container}>
+        <motion.div
+          initial='initial'
+          animate='animate'
+          exit='exit'
+          variants={isMobile ? textMobile : text}
+          className={styles.container}
+        >
           <p>
             If you’d like to buy my works or you’re interested in working together, feel free to send me a message via
             email or Instagram DM.
